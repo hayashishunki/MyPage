@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  /* 背景色を画像で指定する
+     画像が表示されない場合、背景色が表示される
+     画像が画面いっぱいになるまで、繰り返し表示されるため、画面全体に表示される
+     background-repeat: repeat-x(y); で、繰り返し表示する方向を指定できる
+     画像が大きすぎるとサイト表示に時間がかかるため、画像サイズを小さくするか、圧縮するとよいCompressor.ioなど
+  */
+  background-color: #f5f2e5;
+  background-image: url("./chapter3/c3-08-1/images/bg.png");
+  background-repeat: no-repeat; /* 画像は繰り返さない指定 */
+  background-size: cover; /* 表示領域を埋めつくすように表示の指定(画面全体に画像自体を敷き詰める)、containにすると縦横比を画像のまま指定できるが、余白ができたりする */
+  height: 100vh;
+  background-position: 30px 80px; /* 画像の表示位置を指定する　左から30px、上から80px */
+}
+h1 {
+  color: #0bd;
+}
+p {
+  /* 文章主体のwebサイトでは、文字サイズを14~18px程度に設定するのが一般的 */
+  font-size: 18px;
+
+  /* ブラウザーによっては、日本語のフォント名を識別できないため、英語表記のフォント名も同時に指定するとよい 
+     また、フォント名の間にはカンマで区切り、先に指定したフォントがない場合に次のフォントを使用する 
+     使用するフォントは1~3つ程度に抑えるとよい
+  */
+  /* font-family: sans-serif, "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", "Arial", "Helvetica", "sans-serif"; */
+
+  /* 通常は、normalやboldが使用される 
+     長文に太字は使用しない
+  */
+  font-weight: bold;
+
+  /* 行の高さは、一般的に1.5~1.9を使用される */
+  line-height: 1.7;
+
+  /* justify=文章の両端をきちんとそろえる、left=文章の右端ががたがたに不揃いになる可能性がある  */
+  text-align: justify;
+
+  /* Webフォントを使用することで、ユーザーがインストールしていないフォントを使用することができる
+     Google FontsなどのWebフォントを使用する場合、font-familyに指定するフォント名を指定する
+     例: font-family: "M PLUS Rounded 1c", sans-serif;
+     htmlファイルの<head>タグ内に、Google Fontsのリンクを記述する
+     例: <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+  */
+  font-family: "M PLUS Rounded 1c", sans-serif;
+
+  /* 文字の色を指定する
+     文字の透明度を指定したい場合以下のようにrgbaを使用する(ケツが0.5の場合、50%の透明度になる)
+  */
+  color: rgba(10, 130, 165, 0.5);
+
+  /* 背景色を指定する */
+  background-color: #faa;
+
+}
