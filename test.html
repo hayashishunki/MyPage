@@ -77,6 +77,55 @@
 
 <h2><a href="mailto:hoge@gmail.com">お問い合わせ</a></h2>
 
+<form action="example.php" method="post" name="contact-form"> 
+  <p><input type="text" name="name" placeholder="お名前"></p>
+  <p><input type="email" name="email" placeholder="メールアドレス"></p>
+  <!-- ラジオボタンは、同じname属性にするとどれか一個しか選択できないようにすることができる -->
+  <p>
+    <input type="radio" name="gender" value="男" checked> 男
+    <input type="radio" name="gender" value="女"> 女
+    <input type="radio" name="gender" value="その他"> その他
+  </p>
+  <!-- チェックボックスは、同じname属性にしても複数選択することができる -->
+   <p>
+    <input type="checkbox" name="color" value="赤" checked> 赤
+    <input type="checkbox" name="color" value="青"> 青
+    <input type="checkbox" name="color" value="黄"> 黄
+    <input type="checkbox" name="color" value="緑"> 緑
+  </p>
+
+  <p><input type="submit" value="送信"></p>
+  <p><input type="image" name="submit-button" src="./chapter2/c2-11-7/images/button.png" alt="送信する"></p>
+
+  <!-- セレクトボックス -->
+  <p>
+    <select name="bloodtype">
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="O">O</option>
+      <option value="AB">AB</option>
+      <option value="不明" selected>不明</option>
+    </select>
+  </p>
+
+  <!-- 複数行のテキストボックス -->
+  <p><textarea name="message" placeholder="メッセージを入力"></textarea></p>
+
+  <!-- ラベルタグは、チェックボックスやラジオボタンなど小さな選択欄を選択するのが難しい方ように該当する文字を選択しても選択できるようにしたもの -->
+   <p>
+      <input type="checkbox" name="travel" value="日本国内" id="japan">
+      <label for="japan">日本国内</label>
+
+      <input type="checkbox" name="travel" value="ヨーロッパ" id="europe">
+      <label for="europe">ヨーロッパ</label>
+
+      <input type="checkbox" name="travel" value="東南アジア" id="asia">
+      <label for="asia">東南アジア</label>
+  </p>
+</form>
+
+
+
 
   
 </body>
