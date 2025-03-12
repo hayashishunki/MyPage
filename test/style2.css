@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* 
+   marginは左から時計回りに上、右、下の順に指定できる
+*/
+div[name="1"] {
+  height: 100px;
+  width: 100px;
+  background-color: #ecc620;
+  /* margin: 30px 0 0 100px; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div[name="2"] {
+  height: 100px;
+  width: 100px;
+  background-color: #ecc620;
+  /* margin: 30px 0 0 100px; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div[name="3"] {
+  height: 100px;
+  width: 100px;
+  background-color: #ecc620;
+  /* margin: 30px 0 0 100px; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div[name="4"] {
+  height: 100px;
+  width: 100px;
+  background-color: #ecc620;
+  /* margin: 30px 0 0 100px; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+

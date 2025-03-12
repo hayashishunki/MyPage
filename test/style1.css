@@ -59,5 +59,15 @@ p {
   */
   width: 50%;
   height: 50%;
+}
 
+/* 余白の調整
+　要素を四角異入れ物と考えた時に以下の様になる。
+　marginは、その入れ物から他の入れ物までの距離(外側)
+　paddingは、入れ物の縁から中身までの距離(内側)
+*/
+div#footer {
+   background: #0bd;
+   margin-top: 30px;
+   margin-left: 100px;
 }
