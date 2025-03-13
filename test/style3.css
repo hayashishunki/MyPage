@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* flexboxの使用方法
+　　昔はfloatを使っていたが、flexboxを使うことで簡単にレイアウトを組むことができる
+*/
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: aquamarine;
+}
+.Item {
+  background: #0bd;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+}
