@@ -48,4 +48,54 @@ div[name="4"] {
   justify-content: center;
 }
 
+/* border　線を引く
+   実際に製作する際には、一括で指定することが多い
+*/
+p[name="border"] {
+  /* border-width: 15px 5px 5px 20px;
+  border-style: outset;
+  border-color: tomato; */
+  border-bottom: 1px outset rgb(183, 179, 178);
+  margin: 10px 200px;
+  padding-bottom: 10px;
+  text-align:center;
+}
+
+/* リストの装飾
+   画像を使ったリストの装飾も可能
+*/
+ul{
+  /* list-style-type: square;
+  list-style-position: inside;
+  background-color: #d3d0d0;
+  list-style-image: url(../chapter3/c3-12-3/images/star.png); */
+  /* 一括指定 */
+  list-style: square url(../chapter3/c3-12-3/images/star.png) outside;
+  text-shadow: 2px 2px 2px #000;
+}
+ol{
+  list-style-type: lower-latin;
+  list-style-position: outside;
+  /* background-color: #d3d0d0; */
+  padding-bottom: 50px
+}
+
+p {
+  color: #999;
+}
+
+/* classで指定する場合のcssの当て方 */
+.blue {
+  color: #0bd;
+}
+
+/* idで指定する場合のcssの当て方 */
+#orange {
+  color: #fa2;
+}
+
+.text-center {
+  text-align: center;
+}
+
 
