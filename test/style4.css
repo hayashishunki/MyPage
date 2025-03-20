@@ -1,18 +1,16 @@
 @charset "UTF-8";
-/* flexboxの使用方法(横向き)
+/* flexboxの使用方法(縦向き)
 　　昔はfloatを使っていたが、flexboxを使うことで簡単にレイアウトを組むことができる
 */
 .container {
   /* flexBox使用宣言 */
   display: flex; 
-  /* 並び順 */
-  flex-direction: row;
-  /* 並び方 */
-  justify-content: space-around;
-  /* 折り返し */
-  flex-wrap: wrap;
+  /* 垂直方向のどの位置に配置するか指定 */
+  align-items: center;
+  height: 100vh;
   background-color: aquamarine;
 }
+
 .Item {
   background: #0bd;
   color: #fff;
