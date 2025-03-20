@@ -6,8 +6,12 @@
   /* flexBox使用宣言 */
   display: flex; 
   /* 垂直方向のどの位置に配置するか指定 */
-  align-items: center;
-  height: 100vh;
+  /* align-items: center; */
+  /* 複数行の垂直方向への並び方 */
+  align-content: space-between;
+  /* 並び順 */
+  flex-wrap: wrap;
+  height: 300px;
   background-color: aquamarine;
 }
 

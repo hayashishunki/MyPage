@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* cssグリッド
+　　同じ大きさのボックスを等しい間隔でならばていくレイアウトを作成
+*/
+.container {
+  /* cssグリッド指定 */
+  display: grid;
+  /* グリッドの列の数を指定、一列に3つのグリッドアイテムを並べる、画面が小さくなるとそれに合わせてグリッドアイテムが大小変化する */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* グリッドアイテムの高さを指定する */
+  grid-template-rows: 200px 200px;
+  /* gridアイテムの間余白を均等に付ける */
+  gap: 10px;
+}
+
+.Item {
+  background: #0bd;
+  color: #fff;
+  padding: 10px;
+}
