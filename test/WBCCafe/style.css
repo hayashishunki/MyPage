@@ -133,7 +133,9 @@ footer p {
 
 /* 記事部分 */
 article {
-  width: 74%;
+  width: 60%;
+  /* 左から表示順を指定　※display:flexの指定が　ある要素の子要素のみ動作 */
+  order: 2;
 }
 article img {
   margin-bottom: 20px;
@@ -183,6 +185,8 @@ article p {
 /* サイドバー */
 aside {
   width: 22%;
+  /* 左から表示順を指定　※display:flexの指定が　ある要素の子要素のみ動作 */
+  order: 3;
 }
 aside p {
   /* 文章改行(余白)箇所変更 */
@@ -215,6 +219,11 @@ aside p {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+}
+
+.ad {
+  /* 左から表示順を指定　※display:flexの指定が　ある要素の子要素のみ動作 */
+  order: 1;
 }
 
 /* レスポンシブ対応　モバイル版 タイトルとメニュー文字サイズを変更
