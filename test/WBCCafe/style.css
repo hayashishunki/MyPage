@@ -335,6 +335,22 @@ iframe {
   width: 100%;
 }
 
+/* SNS */
+#sns {
+  background: #FAF7F0;
+  padding: 4% 0;
+}
+#sns .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#sns .sub-title {
+  margin-bottom: 30px;
+}
+.sns-box {
+  width: 30%;
+}
+
 /* レスポンシブ対応　モバイル版 タイトルとメニュー文字サイズを変更
 ------------------------------------------------------------ */
 /* メディアクエリー　ブレークポイントは600pxがオールラウンダーに対応でき、良い */

@@ -1,0 +1,21 @@
+sns を組み込む
+・facebook
+https://developers.facebook.com/docs/plugins/page-plugin?locale=ja_JP
+設定は、以下
+URLは、該当店などのURL
+タブは、timeline
+幅は、空欄
+高さは、315
+plugin containerの幅に合わせるにチェックを入れる
+コードを取得でIFrameタブを選択し、HTMLに張り付ける
+※レスポンシブに対応させるには、javascript版を使用する必要がある
+
+・X(Twitter)
+https://publish.twitter.com/
+URLを入力し、Enter後、EmbeddedTimelineを選択
+set customization options.をクリックし、height高さサイズを315に変更し、updateを押下
+HTMLに貼り付ける
+※レスポンシブも対応している
+
+・YouTube
+YouTubeの掲載したい画面に行き、共有から埋め込むを選択し、HTMLに貼り付ける
