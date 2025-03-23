@@ -2,8 +2,9 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <!-- レスポンシブ対応 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WCB Cafe</title>
+    <title>WCB Cafe - CONTACT</title>
     <meta
       neme="description"
       content="ブレンドコーヒーとヘルシーなオーガニックフードを提供するカフェ"
@@ -36,7 +37,7 @@
     <link rel="manifest" href="./images/site.webmanifest" />
   </head>
   <body>
-    <div id="home" class="big-bg">
+    <div id="contact" class="big-bg">
       <header class="page-header wrapper">
         <h1>
           <a href="index.html"
@@ -52,15 +53,36 @@
         </nav>
       </header>
 
-      <div class="home-content wrapper">
-        <h2 class="page-title">We'll Make Your Day</h2>
-        <p>
-          おしゃれなカフェで癒されてみませんか？無添加の食材で体の中からリフレッシュ。
-        </p>
-        <a class="button" href="menu.html">メニューを見る</a>
+      <div class="wrapper">
+        <h2 class="page-title">Contact</h2>
+        <form action="#">
+          <div>
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="your-name" />
+          </div>
+
+          <div>
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="your-email" />
+          </div>
+
+          <div>
+            <label for="message">メッセージ</label>
+            <textarea id="message" name="your-message"></textarea>
+          </div>
+
+          <input type="submit" class="button" value="送信" />
+        </form>
       </div>
-      <!-- /.home-content -->
+      <!-- /.wrapper -->
     </div>
-    <!-- /#home -->
+    <!-- /#contact -->
+
+    <footer>
+      <div class="wrapper">
+        <!-- コピーライトはsmallタグで指定 -->
+        <p><small>&copy; 2025 hayashinoshun</small></p>
+      </div>
+    </footer>
   </body>
 </html>

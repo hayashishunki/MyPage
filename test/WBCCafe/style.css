@@ -208,7 +208,7 @@ aside p {
 .sub-menu a {
   color: #432;
   padding: 10px;
-  /* リンククリック範囲を拡大 */
+  /* 改行し、リンククリック範囲を拡大 */
   display: block;
 }
 .sub-menu a:hover {
@@ -265,6 +265,50 @@ aside p {
   width: 100%;
   /* imgサイズの歪みをトリミングして自動調整 */
   object-fit: cover;
+}
+
+/* CONTACT
+------------------------------------------------------------ */
+#contact {
+  background-image: url("./images/contact-bg.jpg");
+  /* 背景画像の最低の高さを指定 */
+  min-height: 100vh;
+}
+
+/* FORM */
+form div {
+  margin-bottom: 14px;
+}
+label {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  /* 要素の中で改行できる */
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  /* 半透明の入力欄 */
+  background: rgba(255, 255, 255, .5);
+  border: 1px #fff solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  max-width: 240px;
+}
+textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
 }
 
 /* レスポンシブ対応　モバイル版 タイトルとメニュー文字サイズを変更
@@ -347,5 +391,17 @@ aside p {
   }
   .big-box img {
     height: 100%;
+  }
+
+  /* CONTACT */
+  #contact .page-title {
+    margin-top: 40px;
+  }
+
+  /* FORM */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    max-width: 100%;
   }
 }
