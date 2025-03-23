@@ -216,3 +216,31 @@ aside p {
   justify-content: space-between;
   margin-bottom: 50px;
 }
+
+/* モバイル版 タイトルとメニュー文字サイズを変更
+------------------------------------------------------------ */
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+  .page-header {
+    /* ロゴに対して、要素を縦並びに変更 */
+    flex-direction: column;
+    /* 要素を画面中央に配置 */
+    align-items: center;
+  }
+
+  /* HEADER */
+  .main-nav {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .main-nav li {
+    margin: 0 20px;
+  }
+
+  /* HOME */
+  .home-content {
+    margin-top: 20%;
+  }
+}
