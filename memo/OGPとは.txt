@@ -1,0 +1,12 @@
+OGPとは
+SNSでWebサイトがシェアされたときにWebページのタイトルや説明文、画像などの情報を正しく伝えるための仕組みのこと。
+要は、当サイトを他のsns等を使用してシェアした際に画像や文章で説明してくれるようにするための設定。
+画像を指定したい場合、縦1200px、横630pxを推奨している。
+
+<適用されているか確認>
+・facebook
+https://developers.facebook.com/tools/debug/
+
+・twitter
+https://cards-dev.twitter.com/validator
+
